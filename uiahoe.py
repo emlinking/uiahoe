@@ -50,7 +50,6 @@ def vowel_add_mark(vowel):
                 pass
             
             else:
-                #print "enter line 48"
                 if vowel in string.ascii_lowercase: #確認欲加號母音是小寫或否
                     vowel = marked_lit_vowel_lst[anal_syllable[3]][vowel_order]
                 else: #大寫
@@ -66,7 +65,7 @@ def vowel_add_mark(vowel):
 '''主程式'''
 
 if len(sys.argv) == 1:
-    print "請輸入欲轉換的POJ（數字符號形）。"
+    print("請輸入欲轉換的POJ（數字符號形）。")
     exit()
 
 orig_content  = "" #原來的POJ數字表記
@@ -222,4 +221,4 @@ for i in range(len(syllable_list)):
         result = result + anal_syllable[0] + anal_syllable[1] +\
             anal_syllable[2]
     
-print result
+print(result)
